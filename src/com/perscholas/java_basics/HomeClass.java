@@ -4,6 +4,7 @@ public class HomeClass {
 	
 	public static void main(String[] args) {
 			
+		question8();
 		}
 				 	//  303.1.2 - Practice Assignment Core Java - Variables
 
@@ -136,8 +137,9 @@ public class HomeClass {
 	 Be sure to format the results to 2 decimal places. 
 	 */
 	
-	double SALES_TAX = 6.5 ;
-	totalSale =  subtotal + SALES_TAX;
+	final double SALES_TAX = 0.065 ;
+	double tax =  subtotal * SALES_TAX;
+	totalSale = subtotal + tax;
 	System.out.printf("%.2f", totalSale);
 
 	}
